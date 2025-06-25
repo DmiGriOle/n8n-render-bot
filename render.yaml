@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: n8n-bot
+    env: static
+    plan: free
+    buildCommand: ""
+    startCommand: n8n
+    envVars:
+      - key: N8N_BASIC_AUTH_USER
+        value: admin
+      - key: N8N_BASIC_AUTH_PASSWORD
+        value: change_me
+      - key: TELEGRAM_BOT_TOKEN
+        value: your_token_here
